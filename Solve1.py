@@ -1,8 +1,10 @@
 import random
 
+# Esta función genera una regla aleatoria del acertijo.
 def generar_regla_azar():
     return random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
+# Esta función aplica la regla seleccionada al estado actual de las jarras.
 def aplicar_regla(jarra_3, jarra_4, regla):
     if regla == 1:
         jarra_4 = 4
@@ -35,6 +37,7 @@ def aplicar_regla(jarra_3, jarra_4, regla):
     
     return jarra_3, jarra_4
 
+# Esta función resuelve el acertijo de las jarras de agua utilizando las funciones anteriores.
 def resolver_acertijo():
     jarra_3 = 0
     jarra_4 = 0
